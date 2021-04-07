@@ -12,16 +12,21 @@ export default {
     address: "2/5/C Dhaka",
     phone: "123 456 7890",
 
-    socials: {             
+    socials: {  
+        Facebook: {
+            link: "https://www.facebook.com",
+            text: "MyFacebook",
+            icon: <FacebookIcon />,
+        },           
         LinkedIn: {
             link: "https://www.linkedin.com",
             text: "MyLinkedIn",
-            Icon: <LinkedInIcon />
+            icon: <LinkedInIcon />,
         },
         Github: {
             link: "https://www.github.com",
             text: "MyGithub",
-            Icon: <GitHubIcon />
+            icon: <GitHubIcon />,
         }
     },
 

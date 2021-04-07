@@ -1,5 +1,5 @@
 import { Typography } from '@material-ui/core' 
-import img from '../../assets/img/arafa2.jpg'
+import img from '../../assets/img/arafa1.jpg'
 import React from 'react'
 import './Profile.css';
 import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/CustomTimeline';
