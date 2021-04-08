@@ -20,13 +20,13 @@ function App() {
         <Grid item xs>          
           <Router>
             <Header />
-            <Switch>
-              <Route path='/portfolio'>
-                <Portfolio />
-              </Route>
+            <Switch>              
               <Route path='/'>
                 <Resume />
-            </Route>    
+            </Route>
+            <Route path='/portfolio'>
+                <Portfolio />
+              </Route>    
             </Switch>                                
           </Router>          
           <Footer />

@@ -27,14 +27,14 @@ const Header = (props) => {
                    {/* Resume link */}
                    <Nav.Link 
                      as={NavLink} to="/" 
-                     className={pathName == "/" ? 'header_link_active' : 'header_link'}>
+                     className={pathName == "/" ? "header_link_active" : "header_link"}>
                      Resume
                     </Nav.Link>
                
                     {/* Resume link */}               
                    <Nav.Link 
                      as={NavLink} to="/" 
-                     className={pathName == "/portfolio" ? 'header_link_active' : 'header_link'}>
+                     className={pathName == "/portfolio" ? "header_link_active" : "header_link"}>
                      Portfolio
                     </Nav.Link>
                </Nav>
