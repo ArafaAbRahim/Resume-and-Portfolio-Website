@@ -3,7 +3,10 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import { AssignmentIndOutlined, WebOutlined } from '@material-ui/icons';
+import { AssignmentIndOutlined, Language, WebOutlined } from '@material-ui/icons';
+
+
+
 
 export default {
     name: "Arafah Ab Rahim",
@@ -108,6 +111,81 @@ export default {
         {
             title: "SOURCE CONTROL",
             description: ["Git","GitHub"]
+        },
+    ],
+
+    projects: [
+        {
+            tag: "React",
+            image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGNvZGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+            title: "project 1",
+            caption: "A short description",
+            description: "This is my project description",
+            links: [
+                {link: "https://www.google.com", icon: <FacebookIcon />},
+                {link: "https://www.google.com", icon: <GitHubIcon />},
+                {link: "https://www.google.com", icon: <Language />},
+            ],
+        },
+        {
+            tag: "React",
+            image: "https://images.unsplash.com/photo-1555066932-e78dd8fb77bb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2dyYW1tZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+            title: "project 2",
+            caption: "A short description",
+            description: "This is my project description",
+            links: [
+                {link: "https://www.google.com", icon: <FacebookIcon />},
+                {link: "https://www.google.com", icon: <GitHubIcon />},
+                {link: "https://www.google.com", icon: <Language />},
+            ],
+        },
+        {
+            tag: "Laravel",
+            image: "https://media.gettyimages.com/videos/the-programmer-writes-the-code-for-the-development-of-the-website-video-id1193269492?s=640x640",
+            title: "project 3",
+            caption: "A short description",
+            description: "This is my project description",
+            links: [
+                {link: "https://www.google.com", icon: <FacebookIcon />},
+                {link: "https://www.google.com", icon: <GitHubIcon />},
+                {link: "https://www.google.com", icon: <Language />},
+            ],
+        },
+        {
+            tag: "Laravel",
+            image: "https://as2.ftcdn.net/jpg/02/16/66/67/500_F_216666796_QS63jbmHtGaPe56mYTN7wSwlnVnmOxbf.jpg",
+            title: "project 2",
+            caption: "A short description",
+            description: "This is my project description",
+            links: [
+                {link: "https://www.google.com", icon: <FacebookIcon />},
+                {link: "https://www.google.com", icon: <GitHubIcon />},
+                {link: "https://www.google.com", icon: <Language />},
+            ],
+        },
+        {
+            tag: "WordPress",
+            image: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80",
+            title: "project 1",
+            caption: "A short description",
+            description: "This is my project description",
+            links: [
+                {link: "https://www.google.com", icon: <FacebookIcon />},
+                {link: "https://www.google.com", icon: <GitHubIcon />},
+                {link: "https://www.google.com", icon: <Language />},
+            ],
+        },
+        {
+            tag: "WordPress",
+            image: "https://i.pinimg.com/originals/64/53/41/645341cbe8b2bab955200f47fe5f1f21.png",
+            title: "project 2",
+            caption: "A short description",
+            description: "This is my project description",
+            links: [
+                {link: "https://www.google.com", icon: <FacebookIcon />},
+                {link: "https://www.google.com", icon: <GitHubIcon />},
+                {link: "https://www.google.com", icon: <Language />},
+            ],
         },
     ]
      

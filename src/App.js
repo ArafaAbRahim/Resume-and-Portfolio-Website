@@ -22,11 +22,11 @@ function App() {
             <Header />
             <div className="main-content">
               <Switch>              
-                <Route path='/'>
-                  <Resume />
-                </Route>
                 <Route path='/portfolio'>
                   <Portfolio />
+                </Route>
+                <Route path='/'>
+                  <Resume />
                 </Route>    
               </Switch>
             </div>                                           

@@ -2,14 +2,14 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Navbar } from 'react-bootstrap';
 import { HomeRounded, Telegram } from '@material-ui/icons';
-import {Link, NavLink, withRouter, WithRouter} from 'react-router-dom';
+import {Link, NavLink, withRouter} from 'react-router-dom';
 import resumeData from '../../utils/resumeData';
 import CustomButton from '../Button/Button';
 import './Header.css';
 
 
 const Header = (props) => {
-    const pathName = props?.location?.pathName;
+    const pathName = props?.location?.pathname;
 
     return (
        <Navbar expand="lg" sticky="top" className="header">
@@ -28,14 +28,14 @@ const Header = (props) => {
                    <Nav.Link 
                      as={NavLink} to="/" 
                      className={pathName == "/" ? "header_link_active" : "header_link"}>
-                     Resume
+                     RESUME
                     </Nav.Link>
                
-                    {/* Resume link */}               
+                    {/* Portfolio link */}               
                    <Nav.Link 
-                     as={NavLink} to="/" 
+                     as={NavLink} to="/portfolio" 
                      className={pathName == "/portfolio" ? "header_link_active" : "header_link"}>
-                     Portfolio
+                     PORTFOLIO
                     </Nav.Link>
                </Nav>
 
