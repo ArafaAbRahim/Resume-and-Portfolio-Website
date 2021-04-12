@@ -1,14 +1,18 @@
 import { Grid, Tabs, Tab, Card, CardActionArea, CardMedia, CardContent, Typography, Grow, Dialog, DialogTitle, DialogContent, DialogActions } from '@material-ui/core';
 import React, { useState } from 'react'
+import ImageGallery from '../../components/ImageGallery/ImageGallery';
 import resumeData from '../../utils/resumeData';
 import './Portfolio.css';
 
+
+
 const Portfolio = () => {
     const [tabValue, setTabValue] = useState("All");
-    const [projectDailog, setProjectDailog] = useState(false)   
+    const [projectDailog, setProjectDailog] = useState(false)         
 
-    return (
-       <Grid container spacing={2} className="section pb_45 pt_45">
+        return (        
+
+        <Grid container spacing={2} className="section pb_45 pt_45">
            <Grid item className="section_title mb_30">                    
                 <h6 className="title_text">
                     Portfolio
@@ -37,7 +41,7 @@ const Portfolio = () => {
                                 <Grow in timeout={1000}>
                                     <Card className="customCard" onClick={() => setProjectDailog(project)}> 
                                         <CardActionArea>
-                                            <CardMedia className="customCard_image" image={project.image} title={project.title} />
+                                            <CardMedia className="customCard_image" image={project.images} title={project.title} />
                                             <CardContent>
                                                 <Typography variant="body2" className="customCard_title">{project.title}</Typography>
                                                 <Typography variant="body2" className="customCard_caption" variant="body2">{project.caption}</Typography>
@@ -53,16 +57,21 @@ const Portfolio = () => {
                 </Grid>
             </Grid>
 
-            <Dialog open={projectDailog} onClose={() => setProjectDailog(false)} className="projectDialog" fullWidth="fullWidth">
+            <Dialog open={Boolean(projectDailog)} onClose={() => setProjectDailog(false)} className="projectDialog" maxWidth={"lg"} fullWidth>
                 <DialogTitle onClose={() => setProjectDailog(false)}>
                     {projectDailog.title}
                 </DialogTitle>
-                <img src={projectDailog.image} alt="" className="projectDialog_image"/>
-                <DialogContent>
+
+                <DialogContent >              
+                    {projectDailog.images && (                                                
+                        <ImageGallery images={projectDailog.images} />
+                    )}
+                    
                     <Typography className="projectDialog_description">
                         {projectDailog.description}
                     </Typography>
                 </DialogContent>
+
                 <DialogActions className="projectDialog_actions">
                     {projectDailog?.links?.map((link) => (
                         <a href={link.link} target="_blank" className="projectDialog_icon">{link.icon}</a>
@@ -72,6 +81,7 @@ const Portfolio = () => {
        </Grid>
        
     )
+    
 }
 
 export default Portfolio

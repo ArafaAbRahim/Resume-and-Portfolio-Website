@@ -56,19 +56,19 @@ export default {
 
     educations: [
         {
-            title: "Work 1",
-            date: "2019 - Present",
-            description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet"
+            title: "BSc in CSE",
+            date: "2013 - 2017",
+            description: "University of Liberal Arts Bangladesh"
         },
         {
-            title: "Work 2",
-            date: "2018 - 2019",
-            description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet"
+            title: "HSC",
+            date: "2010 - 2012",
+            description: "Mohammadpur Preparetory Higher Secondary School"
         },
         {
-            title: "Work 3",
-            date: "2017 - 2018",
-            description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet"
+            title: "SSC",
+            date: "2008 - 2010",
+            description: "Bangladesh International School & College, Jeddah"
         }
     ],
 
@@ -117,7 +117,10 @@ export default {
     projects: [
         {
             tag: "React",
-            image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGNvZGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+            images: [
+                "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGNvZGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+                "https://images.unsplash.com/photo-1555066932-e78dd8fb77bb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2dyYW1tZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+            ],
             title: "project 1",
             caption: "A short description",
             description: "This is my project description",
@@ -129,7 +132,9 @@ export default {
         },
         {
             tag: "React",
-            image: "https://images.unsplash.com/photo-1555066932-e78dd8fb77bb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2dyYW1tZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+            images: [
+                "https://images.unsplash.com/photo-1555066932-e78dd8fb77bb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2dyYW1tZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+            ],
             title: "project 2",
             caption: "A short description",
             description: "This is my project description",
@@ -141,7 +146,9 @@ export default {
         },
         {
             tag: "Laravel",
-            image: "https://media.gettyimages.com/videos/the-programmer-writes-the-code-for-the-development-of-the-website-video-id1193269492?s=640x640",
+            images: [
+                "https://media.gettyimages.com/videos/the-programmer-writes-the-code-for-the-development-of-the-website-video-id1193269492?s=640x640",
+            ],
             title: "project 3",
             caption: "A short description",
             description: "This is my project description",
@@ -153,7 +160,9 @@ export default {
         },
         {
             tag: "Laravel",
-            image: "https://as2.ftcdn.net/jpg/02/16/66/67/500_F_216666796_QS63jbmHtGaPe56mYTN7wSwlnVnmOxbf.jpg",
+            images: [
+                "https://as2.ftcdn.net/jpg/02/16/66/67/500_F_216666796_QS63jbmHtGaPe56mYTN7wSwlnVnmOxbf.jpg",
+            ],
             title: "project 2",
             caption: "A short description",
             description: "This is my project description",
@@ -165,7 +174,9 @@ export default {
         },
         {
             tag: "WordPress",
-            image: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80",
+            images: [
+                "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80",
+            ],
             title: "project 1",
             caption: "A short description",
             description: "This is my project description",
@@ -177,7 +188,8 @@ export default {
         },
         {
             tag: "WordPress",
-            image: "https://i.pinimg.com/originals/64/53/41/645341cbe8b2bab955200f47fe5f1f21.png",
+            images: ["https://i.pinimg.com/originals/64/53/41/645341cbe8b2bab955200f47fe5f1f21.png",
+        ],
             title: "project 2",
             caption: "A short description",
             description: "This is my project description",

@@ -8,6 +8,8 @@ import Portfolio from './pages/Portfolio/Portfolio';
 import Resume from './pages/Resume/Resume';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import Contact from './pages/Contact/Contact';
 
 
 function App() {
@@ -21,13 +23,22 @@ function App() {
           <Router>
             <Header />
             <div className="main-content">
-              <Switch>              
+              <Switch>   
+                <Route path='/resume'>
+                  <Resume />
+                </Route>  
+
                 <Route path='/portfolio'>
                   <Portfolio />
                 </Route>
+
+                <Route path='/contact'>
+                  <Contact />
+                </Route>
+                
                 <Route path='/'>
-                  <Resume />
-                </Route>    
+                  <Home />
+                </Route>
               </Switch>
             </div>                                           
           </Router>          
